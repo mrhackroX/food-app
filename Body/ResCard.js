@@ -5,7 +5,6 @@ const ResCard = (props) => {
       <h2>{props.name}</h2>
       <h3>{props.cuisine}</h3>
       <h4>{props.rating}*</h4>
-      <h4>ETA : 30 Min</h4>
     </div>
   );
 };

@@ -62,3 +62,8 @@
   border-color: burlywood;
   box-shadow: 2px;
 }
+
+.filter-btn {
+  padding: 10px;
+  margin: 5px;
+}
