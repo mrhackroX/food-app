@@ -67,3 +67,8 @@
   padding: 10px;
   margin: 5px;
 }
+
+.login {
+  padding: 5px;
+  cursor: pointer;
+}
