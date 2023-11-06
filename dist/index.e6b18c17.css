@@ -33,9 +33,9 @@
 
 .res-card {
   text-align: center;
-  width: 200px;
+  width: 15%;
   margin-top: 10px;
-  padding: 5px;
+  padding: 2px;
 }
 
 .res-card:hover {
@@ -56,7 +56,7 @@
   margin-top: 10px;
 }
 
-.filter-container {
+.filter, .filter-container {
   margin-top: 10px;
   display: flex;
 }
@@ -66,13 +66,21 @@
   box-shadow: 2px;
   border-color: #deb887;
   border-radius: 5px;
-  margin: 5px;
-  padding: 10px;
+  margin-left: 20px;
+  padding: 5px;
 }
 
 .login {
   cursor: pointer;
   padding: 5px;
+}
+
+.search {
+  padding: 5px;
+}
+
+.searchBtn {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=index.e6b18c17.css.map */

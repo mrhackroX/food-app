@@ -29,8 +29,8 @@
   flex-wrap: wrap;
 }
 .res-card{
-  padding: 5px;
-  width: 200px;
+  padding: 2px;
+  width: 15%;
   margin-top: 10px;
   text-align: center;
 }
@@ -51,24 +51,31 @@
   border: 1px solid chocolate;
   margin-top: 10px;
 }
+.filter{
+  display: flex;
+  margin-top: 10px;
+}
 .filter-container{
   display: flex;
   margin-top: 10px;
 }
 .filter-btn{
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
   border-radius: 5px;
   border-color: burlywood;
   box-shadow: 2px;
-}
-
-.filter-btn {
-  padding: 10px;
-  margin: 5px;
+  margin-left: 20px;
 }
 
 .login {
   padding: 5px;
   cursor: pointer;
+}
+
+.search {
+  padding: 5px;
+}
+.searchBtn{
+  margin-left: 10px;
 }

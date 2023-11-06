@@ -4,8 +4,8 @@ import { Header } from './Header/Header'
 import { Body } from './Body/Body'
 import { Footer } from './Footer/Footer'
 import { dummyData } from './Data/DummyData'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useState } from 'react'
+// import axios from 'axios'
 // eslint-disable-next-line no-unused-vars
 import main from './style/main.css'
 const AppLayout = () => {
@@ -39,10 +39,32 @@ const AppLayout = () => {
     //     })
     //     console.log('--api--', apiData)
     // }
+    const [searchVal, setSearchVal] = useState('')
     return (
         <div className="main-app">
             <Header />
             <div className="filter">
+                <input
+                    type="text"
+                    name="searchText"
+                    className="search"
+                    value={searchVal}
+                    onChange={(e) => {
+                        setSearchVal(e.target.value)
+                    }}
+                />
+                <button
+                    className="searchBtn"
+                    onClick={() => {
+                        const filtedData = dummyData.filter((item) => {
+                            console.log('- searchVale-', searchVal)
+                            item.info.name.toLowerCase().includes(searchVal.toLowerCase())
+                        })
+                        console.log('--filtedData--', filtedData)
+                        setNewDummyData(filtedData)
+                    }}>
+                    Search
+                </button>
                 <button
                     className="filter-btn"
                     onClick={() => {
